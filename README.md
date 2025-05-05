@@ -30,7 +30,6 @@ A complete end-to-end project that simulates retail sales data, processes it usi
 - **Top Products by Revenue**
 - **Payment Method Distribution**
 
-_(Add screenshots here if you want!)_
 
 Dataset
 Generated with Faker
