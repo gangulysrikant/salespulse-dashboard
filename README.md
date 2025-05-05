@@ -25,7 +25,16 @@ A complete end-to-end project that simulates retail sales data, processes it usi
 
 ## 📊 Sample Visuals
 
+### 🖼️ Dashboard Preview
+
+#### 📊 Full Dashboard View
+![Dashboard Overview](revenue_by_hour.png)
+
+
+
 - **Revenue Over Time**
+
+  
 - **Revenue by Hour of Day**
 - **Top Products by Revenue**
 - **Payment Method Distribution**
