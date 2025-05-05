@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -48,9 +49,30 @@ st.markdown("### 📌 Key Metrics")
 col1, col2, col3 = st.columns(3)
 
 col1.metric("💰 Total Revenue", f"${filtered['total'].sum():,.2f}")
-col2.metric("🛒 Total O
+col2.metric("🛒 Total Orders", f"{len(filtered)}")
+col3.metric("💳 Avg Order Value", f"${filtered['total'].mean():,.2f}")
 
-# Top Products
+# --- Revenue Over Time ---
+st.markdown("### 📈 Revenue Over Time")
+daily = filtered.groupby("date")["total"].sum()
+st.line_chart(daily)
+
+# --- Sales by Hour ---
+st.markdown("### ⏰ Revenue by Hour")
+hourly = filtered.groupby("hour")["total"].sum()
+st.bar_chart(hourly)
+
+# --- Top Products ---
+st.markdown("### 🏆 Top 10 Products by Revenue")
 top_products = filtered.groupby("product_name")["total"].sum().sort_values(ascending=False).head(10)
-st.subheader("🏆 Top 10 Products by Revenue")
 st.bar_chart(top_products)
+
+# --- Sales by Category (Pie Chart) ---
+st.markdown("### 📦 Revenue by Category")
+cat_data = filtered.groupby("category")["total"].sum()
+
+fig1, ax1 = plt.subplots()
+ax1.pie(cat_data, labels=cat_data.index, autopct='%1.1f%%', startangle=90)
+ax1.axis('equal')
+st.pyplot(fig1)
+
