@@ -76,3 +76,6 @@ ax1.pie(cat_data, labels=cat_data.index, autopct='%1.1f%%', startangle=90)
 ax1.axis('equal')
 st.pyplot(fig1)
 
+# --- Footer ---
+st.markdown("---")
+st.markdown("Built with ❤️ by [Your Name](https://linkedin.com/in/yourname)")
