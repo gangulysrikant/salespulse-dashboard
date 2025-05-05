@@ -32,21 +32,6 @@ A complete end-to-end project that simulates retail sales data, processes it usi
 
 _(Add screenshots here if you want!)_
 
----
-
-## 📦 How to Run Locally
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/salespulse-dashboard.git
-cd salespulse-dashboard
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run the Streamlit app
-streamlit run app.py
-
 Dataset
 Generated with Faker
 
@@ -77,3 +62,18 @@ Bluetooth Headphones is the top-selling product
 Most transactions use Credit Card or PayPal
 
 Sales dip on Sundays — a potential marketing opportunity
+
+
+## 📦 How to Run Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/salespulse-dashboard.git
+cd salespulse-dashboard
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the Streamlit app
+streamlit run app.py
+  
