@@ -78,4 +78,4 @@ st.pyplot(fig1)
 
 # --- Footer ---
 st.markdown("---")
-st.markdown("Built with ❤️ by [Your Name](https://linkedin.com/in/yourname)")
+st.markdown("Built with Streamlit by Srikant")
